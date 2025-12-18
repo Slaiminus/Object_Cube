@@ -125,7 +125,7 @@ public class SimpleItemCollector : MonoBehaviour
         GameObject counter = new GameObject("Counter");
         counter.transform.SetParent(canvas.transform, false);
         counterText = counter.AddComponent<Text>();
-        counterText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        counterText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
         counterText.fontSize = 24; 
         counterText.color = Color.white;
         counterText.alignment = TextAnchor.UpperRight;
@@ -140,9 +140,9 @@ public class SimpleItemCollector : MonoBehaviour
         GameObject prompt = new GameObject("Prompt");
         prompt.transform.SetParent(canvas.transform, false);
         promptText = prompt.AddComponent<Text>();
-        promptText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        promptText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
         promptText.fontSize = 18;
-        promptText.color = Color.yellow;
+        promptText.color = Color.green;
         promptText.alignment = TextAnchor.MiddleCenter;
         promptText.text = "Нажми E чтобы взять";
 
